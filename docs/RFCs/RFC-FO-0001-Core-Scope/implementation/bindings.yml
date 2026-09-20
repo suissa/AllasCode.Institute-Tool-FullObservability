@@ -1,0 +1,22 @@
+rfc: RFC-FO-0001
+semantic: ../semantic.md
+implementation_readme: README.md
+binding_policy:
+  source_of_truth: semantic
+  technology_profile: reference
+  project_override_allowed: true
+  project_override_must_preserve_semantics: true
+  require_requirement_component_map: true
+requirements:
+  FO-SCOPE-001:
+    components:
+      - fullobservability.fo_scope_001
+  FO-SCOPE-002:
+    components:
+      - fullobservability.fo_scope_002
+  FO-SCOPE-003:
+    components:
+      - fullobservability.fo_scope_003
+  FO-SCOPE-004:
+    components:
+      - fullobservability.fo_scope_004
