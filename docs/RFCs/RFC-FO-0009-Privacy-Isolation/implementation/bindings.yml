@@ -1,0 +1,8 @@
+rfc: RFC-FO-0009
+semantic: ../semantic.md
+binding_policy: { source_of_truth: semantic, technology_profile: reference, project_override_allowed: true, project_override_must_preserve_semantics: true }
+requirements:
+  FO-SAFE-001: { components: [fullobservability.fo_safe_001] }
+  FO-SAFE-002: { components: [fullobservability.fo_safe_002] }
+  FO-SAFE-003: { components: [fullobservability.fo_safe_003] }
+  FO-SAFE-004: { components: [fullobservability.fo_safe_004] }
