@@ -1,0 +1,8 @@
+rfc: RFC-FO-0005
+semantic: ../semantic.md
+binding_policy: { source_of_truth: semantic, technology_profile: reference, project_override_allowed: true, project_override_must_preserve_semantics: true }
+requirements:
+  FO-EXPORT-001: { components: [fullobservability.fo_export_001] }
+  FO-EXPORT-002: { components: [fullobservability.fo_export_002] }
+  FO-EXPORT-003: { components: [fullobservability.fo_export_003] }
+  FO-EXPORT-004: { components: [fullobservability.fo_export_004] }
