@@ -1,0 +1,5 @@
+rfc: RFC-FO-0008
+profile: FullObservability-TypeScript-Reference
+semantic_authority: ../semantic.md
+technologies: [TypeScript, OpenTelemetry]
+rules: { semantic_precedence: true, preserve_invariants: true }

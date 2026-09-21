@@ -1,0 +1,56 @@
+# GENERATED FILE — DO NOT EDIT
+# Placeholder until the repository RFC lock generator is implemented.
+rfc: "RFC-FO-0002"
+generated_by: pending-rfc-lock-tool
+source_of_truth: semantic.md
+requirements:
+  FO-SIGNAL-001:
+    requirement_class: required
+    activation_condition: "always"
+    required_evidence: "schema fixtures"
+    statement_hash: null
+    verified_against: null
+    status: not_implemented
+    sources: []
+    tests: []
+    evidence_assertions: []
+  FO-SIGNAL-002:
+    requirement_class: required
+    activation_condition: "always"
+    required_evidence: "schema fixtures"
+    statement_hash: null
+    verified_against: null
+    status: not_implemented
+    sources: []
+    tests: []
+    evidence_assertions: []
+  FO-SIGNAL-003:
+    requirement_class: required
+    activation_condition: "always"
+    required_evidence: "schema fixtures"
+    statement_hash: null
+    verified_against: null
+    status: not_implemented
+    sources: []
+    tests: []
+    evidence_assertions: []
+  FO-SIGNAL-004:
+    requirement_class: required
+    activation_condition: "always"
+    required_evidence: "schema fixtures"
+    statement_hash: null
+    verified_against: null
+    status: not_implemented
+    sources: []
+    tests: []
+    evidence_assertions: []
+  FO-SIGNAL-005:
+    requirement_class: required
+    activation_condition: "always"
+    required_evidence: "roundtrip test"
+    statement_hash: null
+    verified_against: null
+    status: not_implemented
+    sources: []
+    tests: []
+    evidence_assertions: []

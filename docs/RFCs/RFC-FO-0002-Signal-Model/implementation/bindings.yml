@@ -1,0 +1,25 @@
+rfc: RFC-FO-0002
+semantic: ../semantic.md
+implementation_readme: README.md
+binding_policy:
+  source_of_truth: semantic
+  technology_profile: reference
+  project_override_allowed: true
+  project_override_must_preserve_semantics: true
+  require_requirement_component_map: true
+requirements:
+  FO-SIGNAL-001:
+    components:
+      - fullobservability.fo_signal_001
+  FO-SIGNAL-002:
+    components:
+      - fullobservability.fo_signal_002
+  FO-SIGNAL-003:
+    components:
+      - fullobservability.fo_signal_003
+  FO-SIGNAL-004:
+    components:
+      - fullobservability.fo_signal_004
+  FO-SIGNAL-005:
+    components:
+      - fullobservability.fo_signal_005

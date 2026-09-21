@@ -1,0 +1,9 @@
+# GENERATED FILE — DO NOT EDIT
+rfc: RFC-FO-0007
+generated_by: pending-rfc-lock-tool
+source_of_truth: semantic.md
+requirements:
+  FO-INSTR-001: { status: not_implemented, statement_hash: null, verified_against: null, sources: [], tests: [], evidence_assertions: [] }
+  FO-INSTR-002: { status: not_implemented, statement_hash: null, verified_against: null, sources: [], tests: [], evidence_assertions: [] }
+  FO-INSTR-003: { status: not_implemented, statement_hash: null, verified_against: null, sources: [], tests: [], evidence_assertions: [] }
+  FO-INSTR-004: { status: not_implemented, statement_hash: null, verified_against: null, sources: [], tests: [], evidence_assertions: [] }

@@ -1,0 +1,8 @@
+rfc: RFC-FO-0007
+semantic: ../semantic.md
+binding_policy: { source_of_truth: semantic, technology_profile: reference, project_override_allowed: true, project_override_must_preserve_semantics: true }
+requirements:
+  FO-INSTR-001: { components: [fullobservability.fo_instr_001] }
+  FO-INSTR-002: { components: [fullobservability.fo_instr_002] }
+  FO-INSTR-003: { components: [fullobservability.fo_instr_003] }
+  FO-INSTR-004: { components: [fullobservability.fo_instr_004] }

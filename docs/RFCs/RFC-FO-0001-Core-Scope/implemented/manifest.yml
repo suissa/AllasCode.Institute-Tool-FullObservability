@@ -1,0 +1,46 @@
+# GENERATED FILE — DO NOT EDIT
+# Placeholder until the repository RFC lock generator is implemented.
+rfc: "RFC-FO-0001"
+generated_by: pending-rfc-lock-tool
+source_of_truth: semantic.md
+requirements:
+  FO-SCOPE-001:
+    requirement_class: required
+    activation_condition: "always"
+    required_evidence: "scope conformance"
+    statement_hash: null
+    verified_against: null
+    status: not_implemented
+    sources: []
+    tests: []
+    evidence_assertions: []
+  FO-SCOPE-002:
+    requirement_class: required
+    activation_condition: "always"
+    required_evidence: "signal availability"
+    statement_hash: null
+    verified_against: null
+    status: not_implemented
+    sources: []
+    tests: []
+    evidence_assertions: []
+  FO-SCOPE-003:
+    requirement_class: required
+    activation_condition: "always"
+    required_evidence: "business semantic preservation"
+    statement_hash: null
+    verified_against: null
+    status: not_implemented
+    sources: []
+    tests: []
+    evidence_assertions: []
+  FO-SCOPE-004:
+    requirement_class: required
+    activation_condition: "always"
+    required_evidence: "failure isolation test"
+    statement_hash: null
+    verified_against: null
+    status: not_implemented
+    sources: []
+    tests: []
+    evidence_assertions: []

@@ -1,0 +1,12 @@
+rfc: RFC-FO-0006
+profile: FullObservability-TypeScript-Reference
+semantic_authority: ../semantic.md
+technologies:
+  - "RealtimeChannel abstraction"
+  - "WebSocket (default)"
+  - "gRPC streaming (optional alternative)"
+rules:
+  semantic_precedence: true
+  websocket_is_default_binding_not_semantic_requirement: true
+  grpc_allowed: true
+  preserve_invariants: true

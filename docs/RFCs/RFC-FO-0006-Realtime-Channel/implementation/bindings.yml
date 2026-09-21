@@ -1,0 +1,19 @@
+rfc: RFC-FO-0006
+semantic: ../semantic.md
+implementation_readme: README.md
+binding_policy:
+  source_of_truth: semantic
+  technology_profile: reference
+  project_override_allowed: true
+  project_override_must_preserve_semantics: true
+requirements:
+  FO-REALTIME-001:
+    components: [fullobservability.realtime_channel]
+  FO-REALTIME-002:
+    components: [fullobservability.realtime_envelope]
+  FO-REALTIME-003:
+    components: [fullobservability.realtime_backpressure]
+  FO-REALTIME-004:
+    components: [fullobservability.realtime_subscription]
+  FO-REALTIME-005:
+    components: [fullobservability.realtime_auth]

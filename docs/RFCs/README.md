@@ -1,14 +1,29 @@
 # FullObservability RFC Index
 
-These RFCs are language-neutral normative contracts. Implementations in TypeScript, Zig, Rust, Go, Python or any other language MUST preserve the same externally observable semantics.
+Each RFC follows the canonical FullAgenticStack structure:
 
-- RFC-0001 — FullObservability Scope and Principles
-- RFC-0002 — Signal Model: Traces, Spans, Logs, Metrics and Events
-- RFC-0003 — Observation Context and OpenTelemetry Interoperability
-- RFC-0004 — ObservationStore and Storage Modes
-- RFC-0005 — Exporters, OTLP and Grafana Compatibility
-- RFC-0006 — Real-time WebSocket Streaming
-- RFC-0007 — Decorators, Annotations and Instrumentation API
-- RFC-0008 — Configuration Contract
-- RFC-0009 — Privacy, Redaction and Failure Isolation
-- RFC-0010 — Conformance and Cross-language Portability
+```text
+RFC-FO-XXXX-Name/
+├── semantic.md
+├── implementation/
+│   ├── README.md
+│   ├── bindings.yml
+│   └── technology.yml
+└── implemented/
+    ├── manifest.yml
+    ├── tests.yml
+    └── evidence.yml
+```
+
+`semantic.md` is normative. `implementation/` is descriptive. `implemented/` is the verifiable semantic-lock chain and MUST NOT claim implementation without source/test/evidence.
+
+- RFC-FO-0001 — Core Scope
+- RFC-FO-0002 — Signal Model
+- RFC-FO-0003 — OpenTelemetry Context and Propagation
+- RFC-FO-0004 — Observation Storage and Modes
+- RFC-FO-0005 — Exporters, OTLP and Grafana
+- RFC-FO-0006 — Realtime Observability Channel
+- RFC-FO-0007 — Instrumentation API
+- RFC-FO-0008 — Configuration Contract
+- RFC-FO-0009 — Privacy, Redaction and Failure Isolation
+- RFC-FO-0010 — Cross-language Conformance

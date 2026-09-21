@@ -1,0 +1,22 @@
+rfc: RFC-FO-0003
+semantic: ../semantic.md
+implementation_readme: README.md
+binding_policy:
+  source_of_truth: semantic
+  technology_profile: reference
+  project_override_allowed: true
+  project_override_must_preserve_semantics: true
+  require_requirement_component_map: true
+requirements:
+  FO-OTEL-001:
+    components:
+      - fullobservability.fo_otel_001
+  FO-OTEL-002:
+    components:
+      - fullobservability.fo_otel_002
+  FO-OTEL-003:
+    components:
+      - fullobservability.fo_otel_003
+  FO-OTEL-004:
+    components:
+      - fullobservability.fo_otel_004
