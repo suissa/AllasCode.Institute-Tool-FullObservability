@@ -2,6 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { redactAttributes, redactValue, redactRecord } from './redaction.js';
 
+/** @test FO-SAFE-001 @test FO-SAFE-002 */
 test('redacts normalized and nested credential keys', () => {
   const input = {
     authorization: 'Bearer top-secret',
@@ -17,6 +18,7 @@ test('redacts normalized and nested credential keys', () => {
   });
 });
 
+/** @test FO-SAFE-001 */
 test('redacts sensitive attributes without mutating input', () => {
   const input = { password: 'do-not-leak', requestId: 'req-1' };
   const output = redactAttributes(input);
@@ -24,6 +26,7 @@ test('redacts sensitive attributes without mutating input', () => {
   assert.equal(input.password, 'do-not-leak');
 });
 
+/** @test FO-SAFE-002 */
 test('redacts body as well as attributes on telemetry records', () => {
   const record = {
     signal: 'log' as const,
@@ -36,6 +39,7 @@ test('redacts body as well as attributes on telemetry records', () => {
   assert.equal(output.attributes.authorization, '[REDACTED]');
 });
 
+/** @test FO-SAFE-003 */
 test('bounds cyclic and deeply nested payloads', () => {
   const cyclic: Record<string, unknown> = {};
   cyclic.self = cyclic;
