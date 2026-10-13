@@ -1,27 +1,15 @@
-# RFC-FO-0010 — TypeScript transformation
+# RFC-FO-0010 — TypeScript reference transformation
 
-**Semantic authority:** ../semantic.md
+**Semantic authority:** ../semantic.md  
+**Role:** descriptive mapping; not conformance evidence.
 
-Descriptive only; not conformance evidence.
+The reference mapping is requirement-driven. Source annotations use `@satisfies FO-CONF-NNN`; executable tests use `@test FO-CONF-NNN`. An `@evidence FO-CONF-NNN` annotation is valid only when a test assertion checks emitted or persisted evidence, not merely a return value or documentation.
 
-Transformation: `semantic statement → requirement ID → TypeScript component → executable test → generated semantic lock`.
+| Requirement | TypeScript mapping | Verification rule |
+|---|---|---|
+| FO-CONF-001 | `src/conformance.ts` semantic hashing | Tests prove stable normalization and hash drift when meaning changes |
+| FO-CONF-002 | `src/conformance.ts` status derivation | Missing source, test, evidence, or passing result cannot be verified |
+| FO-CONF-003 | `src/conformance.ts` protocol-version compatibility predicate | Breaking changes require a higher major version; malformed versions fail closed |
+| FO-CONF-004 | `src/conformance.ts` status derivation and `implemented/manifest.yml` | Stale semantic hashes prevent verified status |
 
-## FO-CONF-001
-Semantic: semantic.md MUST remain the language-neutral authority.
-
-TypeScript: implement the smallest abstraction preserving this invariant; annotate source `@satisfies FO-CONF-001` and test `@test FO-CONF-001`.
-
-## FO-CONF-002
-Semantic: Each language port MUST prove applicable requirements with executable tests.
-
-TypeScript: implement the smallest abstraction preserving this invariant; annotate source `@satisfies FO-CONF-002` and test `@test FO-CONF-002`.
-
-## FO-CONF-003
-Semantic: Wire-incompatible changes MUST introduce a new protocol or format version.
-
-TypeScript: implement the smallest abstraction preserving this invariant; annotate source `@satisfies FO-CONF-003` and test `@test FO-CONF-003`.
-
-## FO-CONF-004
-Semantic: Conformance manifests MUST NOT claim unverified implementation.
-
-TypeScript: implement the smallest abstraction preserving this invariant; annotate source `@satisfies FO-CONF-004` and test `@test FO-CONF-004`.
+Run `npm run check` for the TypeScript build and executable tests. The manifest remains `not_implemented` until generated metadata and real evidence are available. This branch does not claim full RFC conformance merely because the status primitive has tests.
