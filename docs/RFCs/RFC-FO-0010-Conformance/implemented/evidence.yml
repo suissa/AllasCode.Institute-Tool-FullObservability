@@ -1,3 +1,15 @@
 rfc: RFC-FO-0010
 status: NOT_VERIFIED
-evidence: []
+evidence:
+  - requirement: FO-CONF-001
+    assertion: semantic hash changes when normative text changes
+    status: pending_execution
+  - requirement: FO-CONF-002
+    assertion: missing source/test/evidence mapping cannot produce verified status
+    status: pending_execution
+  - requirement: FO-CONF-003
+    assertion: compatibility predicate rejects breaking unversioned changes
+    status: pending_execution
+  - requirement: FO-CONF-004
+    assertion: stale semantic hash cannot be marked verified
+    status: pending_execution
